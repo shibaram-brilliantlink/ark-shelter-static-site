@@ -15,13 +15,13 @@ function App() {
       <main>
         {/* <HeroSection /> */}
         {/* <Section01 /> */}
-        <Section02 />
+        {/* <Section02 /> */}
         <Section03 />
         <Section04 />
         <Section05 />
         <Section06 />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

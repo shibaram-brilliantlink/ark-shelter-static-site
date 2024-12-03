@@ -45,6 +45,7 @@ export default function Section02() {
           </div>
         </Section__body>
       </Container>
+      <Slider>image slider COMMING SOON.</Slider>
     </Section>
   );
 }
@@ -99,4 +100,13 @@ const Section__body = styled.div`
   @media (min-width: 768px) {
     flex-direction: row;
   }
+`;
+
+const Slider = styled.div`
+  height: 100vh;
+  width: 100%;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
