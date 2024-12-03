@@ -89,7 +89,7 @@ const Hero__content = styled.div`
   .hero__heading {
     padding-left: clamp(1rem, 4.2105vw + -0.0526rem, 5rem);
     max-width: 1300px;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,6 +100,9 @@ const Hero__content = styled.div`
     }
     p {
       font-size: 1.5rem;
+    }
+    @media (min-width: 768px) {
+      height: 70vh;
     }
   }
   .hero__aside {
@@ -114,23 +117,36 @@ const Hero__content = styled.div`
   }
 `;
 const Hero__bottom = styled.div`
-  height: 30vh;
+  height: 40vh;
   width: 80%;
   padding-left: clamp(1rem, 4.2105vw + -0.0526rem, 5rem);
   display: flex;
   justify-content: space-between;
   background: #fff;
   color: #000;
+  padding-bottom: 20px;
+  padding-top: 20px;
   .index__card {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 1rem;
+    font-size: 14px;
+    line-height: 1.25;
+  }
+  .index__heading {
+    font-size: 1.25rem;
+    margin-top: 3px;
+  }
+  .index__subheading {
+    color: gray;
+    font-size: 1rem;
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
+    /* height: 20vh; */
   }
 `;

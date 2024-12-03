@@ -11,9 +11,9 @@ import HeroSection from "./components/HeroSection";
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
-        <HeroSection />
+        {/* <HeroSection /> */}
         <Section01 />
         <Section02 />
         <Section03 />
