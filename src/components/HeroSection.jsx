@@ -74,6 +74,7 @@ const Hero__video = styled.video`
   z-index: -10;
   object-fit: cover;
   height: 100vh;
+  width: 100%;
 `;
 const Hero__content = styled.div`
   height: 100%;

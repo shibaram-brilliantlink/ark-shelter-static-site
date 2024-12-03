@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Slink = styled.a`
   display: inline-block;
-  color: #000;
+  color: #555c62;
   text-decoration: none;
 
   &:active,
