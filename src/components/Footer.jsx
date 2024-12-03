@@ -48,16 +48,14 @@ export default function Footer() {
             <h4>Join our newsletter</h4>
             <p>We will send you updates on new products and discounts.</p>
             <div className="footer__email">
-              <input type="email" />
-              <button type="button" className="btn">
-                Go
-              </button>
+              <input type="email" placeholder="Email" />
+              <button type="button">Go</button>
             </div>
             <div>
               <img
                 src="/public/red-dot-logo.png"
                 alt="red-dot-logo"
-                width={40}
+                width={45}
               />
               &nbsp;winner 2020
             </div>
@@ -82,13 +80,16 @@ const Footer__top = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 24px;
   h4 {
     color: #000;
+    margin-bottom: 6px;
   }
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
+    text-align: left;
   }
   .footer__links {
     display: flex;
@@ -98,9 +99,40 @@ const Footer__top = styled.div`
     text-align: left;
     width: 100%;
     max-width: 380px;
+    li {
+      margin-bottom: 8px;
+    }
   }
   .footer__newsletter {
-    width: 40%;
+    width: 320px;
+    p {
+      margin-bottom: 16px;
+    }
+    .footer__email {
+      border-bottom: 2px solid lightgray;
+      margin-bottom: 20px;
+      &:hover {
+        border-bottom: 2px solid black;
+      }
+    }
+
+    input {
+      outline: none;
+      border: none;
+      display: inline-block;
+      padding: 1em;
+      font-size: 18px;
+      font-family: inherit;
+      letter-spacing: 1.5px;
+    }
+
+    button {
+      border: none;
+      outline: none;
+      font-size: 30px;
+      background: transparent;
+      cursor: pointer;
+    }
   }
 `;
 const Footer__bottom = styled.div`
@@ -109,6 +141,9 @@ const Footer__bottom = styled.div`
   gap: 1em;
   text-align: center;
   width: 100%;
+  border-top: 1px solid gray;
+  padding-top: 10px;
+
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
