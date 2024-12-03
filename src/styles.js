@@ -3,7 +3,10 @@ import styled from "styled-components";
 export const Slink = styled.a`
   display: inline-block;
   color: #555c62;
-  text-decoration: none;
+  /* text-decoration: none;*/
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1.5px;
 
   &:active,
   &:hover {

@@ -14,7 +14,7 @@ function App() {
       {/* <Header /> */}
       <main>
         {/* <HeroSection /> */}
-        <Section01 />
+        {/* <Section01 /> */}
         <Section02 />
         <Section03 />
         <Section04 />
